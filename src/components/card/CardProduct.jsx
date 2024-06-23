@@ -8,16 +8,13 @@ import { useCard } from "../../context/CardContext";
 
 const CardProduct = ({ el }) => {
   const { deleteProduct, readProduct } = useProduct();
-  const { addProductToCard, checkProductInCard } = useCard();
+  const { addProductToCard, checkProductInCard, getProductFromCard } =
+    useCard();
   const navigate = useNavigate();
-
-  const [bool, setBool] = useState(false);
 
   useEffect(() => {
     readProduct();
   }, []);
-
-  console.log(checkProductInCard(el.id));
 
   return (
     <div className={scss.card}>

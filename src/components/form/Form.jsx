@@ -124,7 +124,10 @@ const Form = ({ isEdit }) => {
           {inpValues.image !== "" ? (
             <img src={inpValues.image} alt={inpValues.name} />
           ) : (
-            <p>image</p>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpdpHljQ4Bni5bSHoute6dqvU4g5wiGwgVNA&s"
+              alt={inpValues.name}
+            />
           )}
         </div>
         {isEdit ? (

@@ -15,6 +15,8 @@ body {
   }
   button {
     cursor: pointer;
+    border: none;
+    outline: none;
   }
 }
 body.dark {
@@ -28,4 +30,8 @@ body.dark {
 #dark,
 .dark {
   background: #000;
+}
+input {
+  border: none;
+  outline: none;
 }

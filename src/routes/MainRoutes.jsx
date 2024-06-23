@@ -6,8 +6,8 @@ import AdminPage from "../pages/AdminPage";
 import EditPage from "../pages/EditPage";
 import ListProduct from "../components/products/ListProduct";
 import LoginAdmin from "../autentication/LoginAdmin";
-import LoginClient from "../autentication/LoginClient";
 import Register from "../autentication/Register";
+import BasketPage from "../pages/BasketPage";
 
 const MainRoutes = () => {
   const privat = [
@@ -39,18 +39,18 @@ const MainRoutes = () => {
       id: Date.now(),
     },
     {
-      path: "/loginAdmin",
+      path: "/login",
       element: <LoginAdmin />,
-      id: Date.now(),
-    },
-    {
-      path: "/loginClient",
-      element: <LoginClient />,
       id: Date.now(),
     },
     {
       path: "/register",
       element: <Register />,
+      id: Date.now(),
+    },
+    {
+      path: "/basket",
+      element: <BasketPage />,
       id: Date.now(),
     },
   ];
